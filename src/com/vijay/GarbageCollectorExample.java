@@ -17,8 +17,8 @@ public class GarbageCollectorExample {
         // Output message to confirm program execution
         System.out.println("Garbage Collection requested by System.gc().");
        
-        //Runtime.getRuntime().gc();
-        //System.out.println("Garbage Collection requested by Runtime class.");
+        Runtime.getRuntime().gc();
+        System.out.println("Garbage Collection requested by Runtime class.");
 
 
     }

@@ -6,18 +6,18 @@ public class ObjectMethodsDemo {
 
 		MyObject obj1 = new MyObject("Object1");
 		MyObject obj2 = new MyObject("Object2");
+		
 		MyObject obj3 = obj1;
 		try {
 		MyObject obj4 = (MyObject) obj1.clone();
+		System.out.println("================");
 		System.out.println(obj4);
 		}catch(CloneNotSupportedException e) {
 	    e.printStackTrace();
-	   
 	    e.getMessage();
 	    }
 		
 		System.out.println("================");
-		
 		// toString is called to return string representation of object
 		System.out.println("obj1.toString(): " + obj1.toString());
 
@@ -47,13 +47,14 @@ public class ObjectMethodsDemo {
 			synchronized (obj1) {
 				try {
 					System.out.println("Thread waiting on obj1...");
-					obj1.wait();
+					obj1.wait(20);
 					System.out.println("Thread resumed after wait on obj1...");
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 			}
 		});
+		
 		thread.start();
 
 		synchronized (obj1) {
@@ -73,6 +74,7 @@ public class ObjectMethodsDemo {
 }
 
 class MyObject implements Cloneable {
+	
 	private String name;
 
 	public MyObject(String name) {
