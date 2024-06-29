@@ -6,7 +6,7 @@ public class ObjectMethodsDemo {
 
 		MyObject obj1 = new MyObject("Object1");
 		MyObject obj2 = new MyObject("Object2");
-		
+	
 		MyObject obj3 = obj1;
 		try {
 		MyObject obj4 = (MyObject) obj1.clone();

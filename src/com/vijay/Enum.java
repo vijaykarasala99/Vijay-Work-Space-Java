@@ -3,9 +3,9 @@ package com.vijay;
 public class Enum {
 
 // enum is a special datatype in java used to define a collection of constants
- enum Day {
-	Sunday, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
-}
+	public enum Day {
+		Sunday, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+	}
 
 	public static void main(String[] args) {
 		// Using enum constants

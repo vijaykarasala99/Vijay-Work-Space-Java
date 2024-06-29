@@ -37,12 +37,14 @@ public class Person implements Comparable<Person> {
 			System.out.println(person);
 		}
 		
-			Collections.sort(people, new Comparator<Person>() {
+			   Collections.sort(people, new Comparator<Person>() {
+				
 				@Override
 				public int compare(Person p1, Person p2) {
 					return p1.name.compareTo(p2.name);
 				}	
 			});
+			
 			System.out.println("Sorted by name : ");
 			for (Person person : people) {
 				System.out.println(person);
