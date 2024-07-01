@@ -28,5 +28,6 @@ public class GarbageCollectorExample {
     protected void finalize() {
         System.out.println("Garbage collector called on object: " + this);
     }
-
 }
+
+

@@ -9,7 +9,7 @@ public class PrimitiveToWrapper {
 		Integer b = Integer.valueOf(a);
 		System.out.println(b);
 
-		               // Auto-boxing
+		// Auto-boxing
 		int c = 15;
 		Integer d = c;
 		System.out.println(d);

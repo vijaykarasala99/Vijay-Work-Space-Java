@@ -13,9 +13,7 @@ public class MyThread extends Thread {
 		
 	    System.out.println(th + "   :is running");
 	    System.out.println(th.getId());
-	    System.out.println(th.getPriority());
-	   
-	
+	    System.out.println(th.getPriority());	
 		/*
 		 run Method: Invokes the task in the current thread. It’s just a normal method
 		 call and does not start a new thread.

@@ -21,7 +21,7 @@ public class PrimeNumberInRange {
 				}
 			}
 			if (isPrime && a > 1) {
-				System.out.println(i);
+				System.out.println(i); 
 			}
 		}
 		if (a <= 1) {

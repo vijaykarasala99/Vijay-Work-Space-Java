@@ -8,7 +8,7 @@ public class Swapping {
 		String s1 = "VIJAY";
 		String s2 = "KARASALA";
 		System.out.println("Strings Before Swapping: " + s1 + " , " + s2);
-
+		
 		s1 = s1.concat(s2);
 		s2 = s1.substring(0, s1.length() - s2.length());
 		s1 = s1.substring(s2.length());
