@@ -7,28 +7,25 @@ import java.util.Map.Entry;
 public class HashMapExample {
 
 	public static void main(String[] args) {
-
 		HashMap<Integer, String> map = new HashMap<>();
 		map.put(5, "guntur");
 		map.put(6, "guntur");
 		map.put(2, "vijay");
 		map.put(3, null);
 		map.put(null, null);
-		
+		map.put(3, "me");
 		System.out.println(map);
 		System.out.println(map.size());
-		System.out.println(map.get(2));
+		System.out.println(map.get(3));
         System.out.println(map.containsValue("guntur"));
         System.out.println(map.containsKey(1));
            
-        // Remove a key-value pair
+        //Remove a key-value pair
         map.remove(3);
         System.out.println(map);
-        
-        
+           
         System.out.println("===========================");
 
-         
         // Iterate over the keys
         for (Integer key : map.keySet()) {
             System.out.println("Key: " + key + ", Value: " + map.get(key));
@@ -44,9 +41,9 @@ public class HashMapExample {
         for (Entry<Integer, String> entry : map.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
-
         // Clear the map
         map.clear();
+}}
 
-	}
-}
+
+
