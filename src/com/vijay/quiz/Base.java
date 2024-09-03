@@ -1,4 +1,4 @@
-package com.vijay.cloudgen;
+package com.vijay.quiz;
 
 public class Base {
   static void show() {

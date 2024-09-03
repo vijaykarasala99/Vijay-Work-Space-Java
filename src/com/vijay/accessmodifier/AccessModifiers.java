@@ -2,7 +2,7 @@ package com.vijay.accessmodifier;
 public class AccessModifiers {
 	
 	private  int privateField;          // private Only accessible within this class
-	int defaultField = 2;              // default Accessible within this package
+	int defaultField = 2;               // default Accessible within this package
 	protected int protectedField = 3;  // protected Accessible within this package and subclasses
 	public int publicField = 4;        // public Accessible from anywhere
 

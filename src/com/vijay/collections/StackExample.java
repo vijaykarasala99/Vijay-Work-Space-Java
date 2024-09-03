@@ -13,18 +13,25 @@ public class StackExample {
         stack.push(30);
         stack.push(40);
         stack.push(50);
+        stack.push(60);
+        stack.push(70);
+        stack.push(80);
+       
 
+        
         // Display the stack
         System.out.println("original stack: " + stack);
         System.out.println();
         // Use add method (inherits from Vector)
         stack.add(60);
         System.out.println("Stack after add method: " + stack);
-
+        System.out.println();
         // Use remove method (inherits from Vector)
+        stack.remove((Integer)50);
         stack.remove(Integer.valueOf(20));
         System.out.println("Stack after remove method: " + stack);
-
+        System.out.println();
+        
         // Peek at the top element without removing it
         System.out.println("Top element (peek): " + stack.peek());
        
