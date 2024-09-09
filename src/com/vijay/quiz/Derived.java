@@ -8,7 +8,6 @@ public class Derived extends Base{
 	public static void main(String[] args) {
 		Derived d=new Derived();
 		d.show();
-		
       ((Base) new Derived()).show();
 	}
 
