@@ -9,7 +9,7 @@ public class StringTest {
 		s = sb.toString();
 		
 		// Here toString() ensures you're comparing two String objects, not a StringBuilder and a String
-		   System.out.println(s.equals(sb.toString()));
+		System.out.println(s.equals(sb.toString()));
 	
 	}
 }

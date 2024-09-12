@@ -12,7 +12,6 @@ public class PalindromeString {
 
 		// Remove whitespace and convert to lower-case
 		String temp = str1.replaceAll("\\s", "").toLowerCase();
-
 		for (int i = temp.length() - 1; i >= 0; i--) {
 			str2 = str2 + temp.charAt(i);
 		}
@@ -21,7 +20,7 @@ public class PalindromeString {
 			System.out.println(str1 + " is a palindrome.");
 		} else {
 			System.out.println(str1 + " is NOT a palindrome.");
-
 		}
 	}
 }
+
