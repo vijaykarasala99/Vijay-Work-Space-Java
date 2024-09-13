@@ -3,7 +3,7 @@ package com.vijay;
 import java.util.Scanner;
 
 public class ArmstrongNumber {
-	
+
 //sum of nth power of each digit equal to the number is called narcissistic number or armstrong
 //	1-Digit Armstrong Numbers
 //	Every single-digit number is an Armstrong number: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
@@ -19,7 +19,7 @@ public class ArmstrongNumber {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a number: ");
 		int n = sc.nextInt();
-
+         
 		int temp = n;
 		int rem = 0;
 		int sum = 0;
@@ -30,6 +30,7 @@ public class ArmstrongNumber {
 			sum += Math.pow(rem, length);
 			n = n / 10;
 		}
+		
 		if (sum == temp) {
 			System.out.println(temp + " : is armstrong");
 		} else {

@@ -7,6 +7,7 @@ public class CountOfDigits {
 		int count = 0;
 		// Convert the number to positive to ignore the sign
 		n = Math.abs(n);
+		
 		if (n == 0) {
 			count = 1;
 		} else {

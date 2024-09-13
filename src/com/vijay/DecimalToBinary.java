@@ -8,10 +8,10 @@ public class DecimalToBinary {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("enter a number:");
 		double number = sc.nextDouble();
-		int i=(int)number;
+		int i = (int) number;
 	
 		String binary = Integer.toBinaryString(i);
-		  System.out.println("Binary representation: " + binary);
+		System.out.println("Binary representation: " + binary);		
 		sc.close();
 	}
 }
