@@ -5,7 +5,9 @@ public class CheckedExceptionExample {
         try {
             Class.forName("com.vijay.exceptions.CheckedExceptionExample");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.out.println(e.getMessage());
+            System.out.println(e.toString());
         }
     }
 }
