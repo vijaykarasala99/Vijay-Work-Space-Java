@@ -13,8 +13,6 @@ public class GarbageCollectorExample {
         
         // Suggesting garbage collection
         System.gc();
-
-        // Output message to confirm program execution
         System.out.println("Garbage Collection requested by System.gc().");
        
         Runtime.getRuntime().gc();
@@ -22,7 +20,6 @@ public class GarbageCollectorExample {
 
 
     }
-    
     // Override finalize method to see when an object is garbage collected
     @Override
     protected void finalize() {

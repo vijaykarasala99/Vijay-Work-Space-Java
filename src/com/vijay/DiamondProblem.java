@@ -26,6 +26,6 @@ public class DiamondProblem implements A, B {
 
     public static void main(String[] args) {
         new DiamondProblem().show(); // Output: Interface A --> Show method...
-                                     
     }
 }
+

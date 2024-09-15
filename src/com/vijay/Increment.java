@@ -9,13 +9,6 @@ public class Increment{
 	++x;
 	System.out.println(x);
 	
-	
-	int y=10;
-	y++;
-	System.out.println(y);
-	
-	
-	
 	   int a = 10;
        int b = a++;  // Postfix: b is assigned 10, then a is incremented to 11
        System.out.println("a: " + a); // Output: a: 11

@@ -8,20 +8,17 @@ public class Enum {
 	}
 
 	public static void main(String[] args) {
-		// Using enum constants
-		Day today = Day.Sunday;
+		Day today = Day.THURSDAY;
 		switch (today) {
 		case Sunday:
-			System.out.println("Relaxing day!");
+			System.out.println("Relaxing Day");
 			break;
 		case MONDAY:
-			System.out.println("Start of the workweek.");
-			break;
-		case WEDNESDAY:
-			System.out.println("Midweek");
+			System.out.println("Work Day");
 			break;
 		default:
-			System.out.println("regular day.");
+			System.out.println("Mid Day");
+			break;
 		}
 	}
 }
