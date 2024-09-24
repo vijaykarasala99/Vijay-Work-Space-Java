@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class PerfectNumber {
 
 	public static void main(String[] args) {
-// if sum of factors of a number expect that number is equal to that number is called perfect number
+// if sum of factors of a number except that number is equal to that number is called perfect number
 // ex: 6, 28, 496 etc..
 		
 		Scanner sc = new Scanner(System.in);

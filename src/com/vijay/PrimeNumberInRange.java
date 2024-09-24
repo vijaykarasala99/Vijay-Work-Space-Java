@@ -14,7 +14,7 @@ public class PrimeNumberInRange {
 		for (int i = a; i <= b; i++) {
 			boolean isPrime = true;
 			// one number has factors up-to half of that number
-			for (int j = 2; j <= i / 2; j++) {
+			for (int j = 2; j < i; j++) {
 				if (i % j == 0) {
 					isPrime = false;
 					break;

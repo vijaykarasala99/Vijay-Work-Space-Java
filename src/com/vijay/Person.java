@@ -8,8 +8,8 @@ public class Person {
 
 	public Person() {
 		super();
-		
 	}
+	
 	// Constructor with parameters
 	public Person(String name, int age, String email) {
 		//this keyword refers current instance of object within a class

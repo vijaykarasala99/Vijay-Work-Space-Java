@@ -15,6 +15,5 @@ public class NumbersAstersik {
 				k++;
 			}
 			System.out.println();
-
 		}
 }}

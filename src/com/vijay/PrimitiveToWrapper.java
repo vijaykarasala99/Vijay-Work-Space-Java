@@ -14,7 +14,7 @@ public class PrimitiveToWrapper {
 		Integer d = c;
 		System.out.println(d);
 		
-		 // Using Integer.intValue() Method
+		// Using Integer.intValue() Method
         Integer x = new Integer(5);
         int y = x.intValue();
         System.out.println(y);

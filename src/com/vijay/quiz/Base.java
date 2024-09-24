@@ -1,7 +1,7 @@
 package com.vijay.quiz;
 
 public class Base {
-  static void show() {
+  public static void show() {
 		System.out.println("Base:: show() called");
 	}
 }

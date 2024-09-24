@@ -16,11 +16,14 @@ public class TypeCasting {
 	public static void main(String[] args) {
 		Parent p = new Parent(); // Parent object
 		p.show(); // Output: Parent show
+		
 		// Upcasting - Child object is assigned to a Parent reference
 		p = new Child(); // This is upcasting (implicit, no need for (Parent) cast)
 		p.show(); // Output: Child show (because of polymorphism)
-		// Downcasting - Converting back to Child reference
+		
+		// Downcasting - Converting a parentclass reference back to a childclass
 		Child c = (Child) p; // Downcasting is required explicitly
 		c.show(); // Output: Child show
 	}
 }
+

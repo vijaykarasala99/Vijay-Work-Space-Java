@@ -67,7 +67,6 @@ public class ObjectMethodsDemo {
 				e.printStackTrace();
 			}
 		}
-
 		// finalize - called by garbage collector, hard to demonstrate directly
 		System.gc();
 	}

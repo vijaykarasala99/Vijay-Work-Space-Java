@@ -2,7 +2,7 @@ package com.vijay;
 
 public class ThreadingExample {
 	
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException{
 
 		Thread thread = new Thread();
 	    thread.start();

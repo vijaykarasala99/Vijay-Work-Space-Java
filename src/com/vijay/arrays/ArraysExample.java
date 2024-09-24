@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArraysExample {
 	public static void main(String[] args) {
 		// Initialize an array
-		int[] numbers = { 40, 10, 50, 20, 30 };
+		int[] numbers = { 40, 10, 50, 20,30};
      
 		// 1. sort() - Sorts the array in ascending order
 		Arrays.sort(numbers);

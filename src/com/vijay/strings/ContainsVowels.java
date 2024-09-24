@@ -8,13 +8,11 @@ public class ContainsVowels {
 
 		for (int i = 0; i < s.length(); i++) {
 			char ch = s.charAt(i);
-
 			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
 				contains = true;
 				break; 
 			}
 		}
-
 		if (contains) {
 			System.out.println("contains vowels");
 		} else {

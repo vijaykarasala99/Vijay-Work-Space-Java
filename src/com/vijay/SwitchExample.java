@@ -5,6 +5,7 @@ public static void main(String[] args) {
 	String a="hlo";
 	
 	switch(a) {
+	
 	default:
 		System.out.println("vijay");
 	}

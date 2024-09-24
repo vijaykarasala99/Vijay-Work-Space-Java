@@ -15,10 +15,9 @@ public class ReadingDataFromUser {
          System.out.println(input);
          
         //by using Scanner class which is in java.util package
-		@SuppressWarnings("resource")
 		Scanner sc= new Scanner(System.in);
-		System.out.print("enter name:");
-		String s = sc.next();
+		System.out.print("enter name: ");
+		String s = sc.nextLine();
 		System.out.println(s);
 		   
 	}
