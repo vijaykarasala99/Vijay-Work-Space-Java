@@ -17,7 +17,7 @@ public class PalindromeString {
 		}
 
 		if (str2.equals(temp)) {
-			System.out.println(str1 + " is a palindrome.");
+			System.out.println(str1 + " is a Palindrome.");
 		} else {
 			System.out.println(str1 + " is NOT a palindrome.");
 		}

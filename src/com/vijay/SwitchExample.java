@@ -5,7 +5,9 @@ public static void main(String[] args) {
 	String a="hlo";
 	
 	switch(a) {
-	
+//	case "hlo":
+//		System.out.println("ME");
+//		break;
 	default:
 		System.out.println("vijay");
 	}

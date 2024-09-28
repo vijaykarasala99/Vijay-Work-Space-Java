@@ -14,8 +14,12 @@ public class Derived extends Base {
 		
 		((Base) new Derived()).show();
 
+		
+		
 		Base bb = new Derived();
 		bb.show();
+		
+		
 	}
 }
 

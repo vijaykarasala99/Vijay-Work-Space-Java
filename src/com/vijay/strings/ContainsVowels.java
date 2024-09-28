@@ -10,7 +10,7 @@ public class ContainsVowels {
 			char ch = s.charAt(i);
 			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
 				contains = true;
-				break; 
+				break;
 			}
 		}
 		if (contains) {

@@ -10,7 +10,6 @@ public class RemoveWhiteSpaces {
 			if (ch != ' ') {
 				s2 = s2 + s.charAt(i);
 			}
-
 		}
 		System.out.println(s2);
 		

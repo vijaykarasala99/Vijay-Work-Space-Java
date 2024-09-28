@@ -1,15 +1,11 @@
 package com.vijay.strings;
 
-import java.util.Arrays;
 
 public class StringMaxLengthWord {
 
 	public static void main(String[] args) {
 		String s = "test java123 hihowareyou tarining";
-        String arr[] = s.split(" ");
-
-        System.out.println(Arrays.toString(arr));
-
+		String[] arr = s.split("\\s+");                  // "\\s+" ensures splitting by one or more spaces
         String fmax = "";
         String smax = "";
 
@@ -22,8 +18,6 @@ public class StringMaxLengthWord {
                 smax = arr[i]; 
             }
         }
-
-        System.out.println("============");
         System.out.println("Longest word:   "          + fmax);
         System.out.println("Second longestword:   "   + smax);
 	}

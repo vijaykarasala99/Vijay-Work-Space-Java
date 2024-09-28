@@ -12,11 +12,11 @@ public class ReverseEachWord {
 			for (int i = word.length() - 1; i >= 0; i--) {
 				rev += word.charAt(i);
 			}
-			result += rev + " ";
+			result = result + rev + " ";
 		}
 		// Remove the trailing space
 		result = result.trim();
 		System.out.println(result);
 	}
-
 }
+
