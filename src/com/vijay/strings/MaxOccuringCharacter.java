@@ -12,8 +12,8 @@ public class MaxOccuringCharacter {
         char maxChar = ' ';
  
         for (int i = 0; i < s.length(); i++) {
-            int count = 1;
-            for (int j = i+1; j < s.length(); j++) {
+            int count = 0;
+            for (int j = 0; j < s.length(); j++) {  
                 if (s.charAt(i) == s.charAt(j)) {
                     count++;
                 }
