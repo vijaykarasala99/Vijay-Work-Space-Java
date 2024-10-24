@@ -6,6 +6,6 @@ public class ASCIICharacterOfString {
 		for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             System.out.println("ASCII Value Of: " + ch + "\t" + (int)ch);
-        }
+		}
 	}
 }

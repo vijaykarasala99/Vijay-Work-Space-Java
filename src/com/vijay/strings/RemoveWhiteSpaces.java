@@ -13,7 +13,7 @@ public class RemoveWhiteSpaces {
 		}
 		System.out.println(s2);
 		
-        System.out.print("unsing replace all: ");
+        System.out.print("using replace all: ");
 		s=s.replaceAll("\\s", "");
         System.out.println(s);
 	}

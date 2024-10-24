@@ -18,7 +18,6 @@ public class Occurrence {
 
         System.out.print("Enter a character to find its occurrence: ");
         char ch = sc.next().charAt(0);
-
         List<Integer> positions = new ArrayList<>();
         for (int i = 0; i < s.length(); i++) {
             if (ch == s.charAt(i)) {

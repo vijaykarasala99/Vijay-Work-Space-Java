@@ -10,18 +10,17 @@ public class RemoveDuplicatesFromString {
 		char arr[] = s.toCharArray();
 		String result = "";
 		for (int i = 0; i < arr.length; i++) {
-			boolean flag = false;
+			boolean flag = true;
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
-					flag = true;
+					flag =false;
 					break;
 				}
 			}
-			if (flag == false) {
+			if (flag) {
 				result += arr[i];
 			}
 		}
-
 		System.out.println("String after removing duplicates: " + result);
 	}
 }

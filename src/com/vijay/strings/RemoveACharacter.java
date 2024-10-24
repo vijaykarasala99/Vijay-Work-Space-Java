@@ -13,10 +13,9 @@ public class RemoveACharacter {
         System.out.print("Enter a character you want to remove: ");
         char ch = sc.next().charAt(0);  
         
-        // Remove the specified character from the string
+        // Remove the specified character from the string    
         String result = s.replace(Character.toString(ch), "");
         System.out.println("Resulting string: " + result);
-        
         sc.close();
     }
 }

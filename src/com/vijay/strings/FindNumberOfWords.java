@@ -7,7 +7,7 @@ public class FindNumberOfWords {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter string: ");
 		String s = sc.nextLine();
-
+        
 		if (s == null || s.trim().isEmpty()) {
 			System.out.println("Number of words: 0");
 		} else {
@@ -16,6 +16,11 @@ public class FindNumberOfWords {
 			System.out.println("Number of words: " + words.length);
 
 		}
-		 sc.close();
+		sc.close();
+		 //split("\\s+") in your Java program, the + is a quantifier in a regular expression (regex) 
+		// that means "one or more occurrences" of the preceding element
+		// With split("\\s+"): It splits the string into ["Hello", "world"] (it ignores multiple spaces).
+        //With split("\\s"): It splits the string into ["Hello", "", "", "", "world"] 
+		
 	}
 }

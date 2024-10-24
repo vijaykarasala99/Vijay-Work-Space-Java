@@ -1,5 +1,7 @@
 package com.vijay.strings;
 
+import java.util.Arrays;
+
 public class SortAString {
     public static void main(String[] args) {
         String s = "abacbagsgs";
@@ -16,5 +18,7 @@ public class SortAString {
             }
         }
         System.out.println("Sorted String: " + new String(arr));
+        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
