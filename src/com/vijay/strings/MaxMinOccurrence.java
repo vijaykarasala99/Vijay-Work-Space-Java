@@ -31,11 +31,9 @@ public class MaxMinOccurrence {
                 minChar = str.charAt(i);
             }
         }
-
         // Print results
         System.out.println("Character with maximum occurrence: " + maxChar);
         System.out.println("Maximum occurrence count: " + maxCount);
         System.out.println("Character with minimum occurrence: " + minChar);
         System.out.println("Minimum occurrence count: " + minCount);
-    }
-}
+}}

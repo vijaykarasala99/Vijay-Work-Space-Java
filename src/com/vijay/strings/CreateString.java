@@ -25,7 +25,7 @@ public class CreateString {
         // 6. Using String.valueOf method
         int number = 100;
         String str6 = String.valueOf(number);
-      
+       
         // Output the created strings
         System.out.println("String 1: " + str1);
         System.out.println("String 2: " + str2);

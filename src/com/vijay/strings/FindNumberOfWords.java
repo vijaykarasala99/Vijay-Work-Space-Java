@@ -14,7 +14,6 @@ public class FindNumberOfWords {
 			// Split the string by one or more whitespace characters
 			String[] words = s.trim().split("\\s+");
 			System.out.println("Number of words: " + words.length);
-
 		}
 		sc.close();
 		 //split("\\s+") in your Java program, the + is a quantifier in a regular expression (regex) 

@@ -14,6 +14,8 @@ public class HashMapExample {
 		map.put(3, null);
 		map.put(null, null);
 		map.put(3, "me");
+	
+		
 		System.out.println(map);
 		System.out.println(map.size());
 		System.out.println(map.get(3));
