@@ -24,7 +24,7 @@ public class ArmstrongNumber {
 		int rem = 0;
 		int sum = 0;
 		int length = String.valueOf(n).length();
-      
+     
 		while (n > 0) {
 			rem = n % 10;
 			sum += Math.pow(rem, length);
