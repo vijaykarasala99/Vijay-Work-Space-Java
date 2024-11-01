@@ -3,7 +3,7 @@ package com.vijay;
 public class SwitchExample {
 public static void main(String[] args) {
 	String a="hlo";
-	
+
 	switch(a) {
 //	case "hlo":
 //		System.out.println("ME");

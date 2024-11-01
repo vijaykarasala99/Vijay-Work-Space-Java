@@ -7,7 +7,7 @@ interface QuestionInterface {
 }
 
 class QuestionClass {
-	public void display() {
+	 public void display() {
 		System.out.println("Class Display Method...");
 	}
 }
