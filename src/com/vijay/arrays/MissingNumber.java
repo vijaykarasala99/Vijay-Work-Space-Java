@@ -16,6 +16,7 @@ public class MissingNumber {
 			}
 		}
 		System.out.println(Arrays.toString(a));
+		
 		System.out.println("Missing numbers: ");
 		for (int i = 0; i < a.length-1; i++) {
 			int k=a[i]+1;   

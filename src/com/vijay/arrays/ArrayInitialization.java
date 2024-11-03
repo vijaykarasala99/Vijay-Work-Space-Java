@@ -7,6 +7,6 @@ public class ArrayInitialization {
 		//int arr []= {};
 		System.out.println(arr[0]);
 		System.out.print(arr[1]);
-
+	
 	}
 }

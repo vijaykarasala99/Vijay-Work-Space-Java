@@ -5,8 +5,11 @@ import java.security.SecureRandom;
 public class OtpGenerator {
 	
   public static void main(String[] args) {
-		String otp = generateOtp();
-		System.out.println("Generated OTP: " + otp);
+	//old approach with Math.random
+	//int otp = (int)(Math.random() * 9000) + 1000;
+	  
+	  String otp = generateOtp();
+	  System.out.println("Generated OTP: " + otp);
 	}
 
 	public static String generateOtp() {
@@ -15,5 +18,4 @@ public class OtpGenerator {
 		return String.valueOf(otp);
 
 	}
-
 }

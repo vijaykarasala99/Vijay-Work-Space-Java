@@ -9,7 +9,7 @@ public class DecimalToBinary {
 		System.out.print("enter a number:");
 		double number = sc.nextDouble();
 		int i = (int) number;
-	
+		
 		String binary = Integer.toBinaryString(i);
 		System.out.println("Binary representation: " + binary);		
 		sc.close();

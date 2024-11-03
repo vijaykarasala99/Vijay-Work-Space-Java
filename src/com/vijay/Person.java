@@ -2,7 +2,7 @@ package com.vijay;
 
 public class Person {
 	// instance variables
-	private String name;
+	private static String name;
 	private int age;
 	private String email;
 
@@ -30,10 +30,11 @@ public class Person {
 	public static void main(String[] args) {
 		// Creating objects using the constructor
 		// order also mandatory when we passing parameters
-		Person p = new Person("John", 1, "john@example.com");
+		Person p = new Person("VIJAY", 1, "vijay@example.com");
 		// Accessing object state and displaying information
 		System.out.println("Information for Person 1:");
 		p.displayInfo();
+		
 	}
 }
 

@@ -1,4 +1,4 @@
-package com.vijay;
+ package com.vijay;
 
 import java.util.Scanner;
 
@@ -19,13 +19,13 @@ public class ArmstrongNumber {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a number: ");
 		int n = sc.nextInt();
-        
+		
 		int temp = n;
 		int rem = 0;
 		int sum = 0;
 		int length = String.valueOf(n).length();
      
-		while (n > 0) {
+		while (n != 0) {
 			rem = n % 10;
 			sum += Math.pow(rem, length);
 			n = n / 10;

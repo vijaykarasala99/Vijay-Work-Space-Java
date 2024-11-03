@@ -13,7 +13,7 @@ interface B {
 }
 
 public class DiamondProblem implements A, B {
-    @Override
+   @Override
     public void show() {
         // Resolve the ambiguity by specifying which interface's method to call
         A.super.show(); // Calls the show method from Interface A

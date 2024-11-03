@@ -19,6 +19,7 @@ public class FibanocciSeries {
 			a = b;
 			b = c;
 
-		}   System.out.println();
+		}  
+		System.out.println();
 	}
 }

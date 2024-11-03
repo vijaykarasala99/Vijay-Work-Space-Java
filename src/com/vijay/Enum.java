@@ -4,13 +4,13 @@ public class Enum {
 
 // enum is a special datatype in java used to define a collection of constants
 	public enum Day {
-		Sunday, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+		SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
 	}
 
 	public static void main(String[] args) {
 		Day today = Day.THURSDAY;
 		switch (today) {
-		case Sunday:
+		case SUNDAY:
 			System.out.println("Relaxing Day");
 			break;
 		case MONDAY:

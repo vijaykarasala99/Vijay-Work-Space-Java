@@ -5,7 +5,7 @@ public class RemoveDuplicates {
 		
 		int[] arr = { 1, 2, 1, 2, 5, 4, 5 };
 
-		System.out.println("Unique elements in the array: ");
+		System.out.println("After Removing Duplicates :");
 
 		for (int i = 0; i < arr.length; i++) {
 			boolean flag = true;
