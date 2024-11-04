@@ -9,18 +9,20 @@ public class RemoveDuplicatesFromString {
 		String s = sc.nextLine();
 		char arr[] = s.toCharArray();
 		String result = "";
+
 		for (int i = 0; i < arr.length; i++) {
-			boolean flag = true;
-			for (int j = i + 1; j < arr.length; j++) {
+			boolean isDuplicate = false;
+			for (int j = 0; j < i; j++) { // Check all previous characters
 				if (arr[i] == arr[j]) {
-					flag =false;
+					isDuplicate = true;
 					break;
 				}
 			}
-			if (flag) {
+			if (!isDuplicate) {
 				result += arr[i];
 			}
 		}
 		System.out.println("String after removing duplicates: " + result);
+		sc.close();
 	}
 }
