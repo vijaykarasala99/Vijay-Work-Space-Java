@@ -17,7 +17,6 @@ public class StringEqualsAndDoubleEquals {
 		
 		String str3 = str1;
 		System.out.println(str1 == str3); // true, because they reference the same object
-
 	
 	}
 }

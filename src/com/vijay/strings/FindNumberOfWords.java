@@ -19,7 +19,6 @@ public class FindNumberOfWords {
 		 //split("\\s+") in our Java program, the + is a quantifier in a regular expression (regex) 
 		// that means "one or more occurrences" of the preceding element
 		// With split("\\s+"): It splits the string into ["Hello", "world"] (it ignores multiple spaces).
-        //With split("\\s"): It splits the string into ["Hello", "", "", "", "world"] 
-		
+        //With split("\\s"): It splits the string into ["Hello", "", "", "", "world"] 	
 	}
 }

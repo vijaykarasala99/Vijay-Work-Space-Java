@@ -13,16 +13,10 @@ public class Derived extends Base {
 		b.show();
 		
 		((Base) new Derived()).show();
-
-		
 		
 		Base bb = new Derived();
 		bb.show();
-		
-		
+			
 	}
 }
 
-//output: 
-//Base:: show() called
-//Base:: show() called

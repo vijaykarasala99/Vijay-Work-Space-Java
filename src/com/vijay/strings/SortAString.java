@@ -18,7 +18,6 @@ public class SortAString {
             }
         }
         System.out.println("Sorted String: " + new String(arr));
-        System.out.println(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
