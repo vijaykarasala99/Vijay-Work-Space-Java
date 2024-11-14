@@ -1,6 +1,7 @@
 package com.vijay.generics;
 
 public class Demo<T> {
+	
 	private T item;
 
 	public void setItem(T item) {

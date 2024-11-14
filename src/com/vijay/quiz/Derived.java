@@ -1,6 +1,6 @@
 package com.vijay.quiz;
 
-public class Derived extends Base {
+public class Derived extends Base{
 	public static void show() {
 		System.out.println("Derived:: show() called");
 	}
@@ -16,7 +16,6 @@ public class Derived extends Base {
 		
 		Base bb = new Derived();
 		bb.show();
-			
 	}
 }
 

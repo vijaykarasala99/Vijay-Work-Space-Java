@@ -13,7 +13,7 @@ public class VijayCalculator {
 		double n2 = sc.nextDouble();
 		System.out.print("Enter Operations Like + - * / % :   ");
 		char operation = sc.next().charAt(0);
-		
+
 		double result;
 		switch (operation) {
 		case '+':

@@ -23,7 +23,7 @@ public class BasicSingleton {
 // Directly call the getInstance method without creating an instance of BasicSingleton
 		BasicSingleton instance1 = BasicSingleton.getInstance();
 		BasicSingleton instance2 = BasicSingleton.getInstance();
-
+		
 		// Check if both references point to the same instance
 		if (instance1 == instance2) {
 			System.out.println("Both references point to the same instance. Singleton verified!");
