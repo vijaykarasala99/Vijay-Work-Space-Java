@@ -7,7 +7,7 @@ public class CharacterCheck {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a single character: ");
 		char ch = sc.next().charAt(0);
-
+		
 		if (Character.isLetter(ch)) {
 			System.out.println(ch + " is an alphabet.");
 		} else if (Character.isDigit(ch)) {
