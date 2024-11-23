@@ -1,19 +1,20 @@
 package com.vijay;
 
 public class SwitchExample {
-public static void main(String[] args) {
-	String a="hlo";
+	public static void main(String[] args) {
+		String a = "hlo";
 
-	switch(a) {
-//	case "hlo":
-//		System.out.println("ME");
-//		break;
-	default:
-		System.out.println("vijay");
+		switch (a) {
+
+		case "hlo":
+			System.out.println("ME");
+			break;
+		default:
+			System.out.println("vijay");
+
+		}
 	}
 }
-}
-
 
 //on which data types can be the variable 'a' be?
 

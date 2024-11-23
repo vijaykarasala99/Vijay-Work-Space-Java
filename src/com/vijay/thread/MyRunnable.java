@@ -16,9 +16,8 @@ public class MyRunnable implements Runnable {
         
         // Calling start method
         thread.start(); // This will create a new thread and run the task in that new thread
-
+     
         // Calling run method directly
         myRunnable.run(); // This will run the task in the main thread
-      
-        
  }}
+
