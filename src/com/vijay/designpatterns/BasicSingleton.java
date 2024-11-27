@@ -11,7 +11,7 @@ public class BasicSingleton {
 	private BasicSingleton() {
 	}
  
-	// Synchronized method to control simultaneous access
+	//Synchronized method to control simultaneous access
 	public static synchronized BasicSingleton getInstance() {
 		if (instance == null) {
 			instance = new BasicSingleton();
@@ -19,7 +19,7 @@ public class BasicSingleton {
 		return instance;
 	}
 
-	public static void main(String[] args) {
+   public static void main(String[] args) {
 // Directly call the getInstance method without creating an instance of BasicSingleton
 		BasicSingleton instance1 = BasicSingleton.getInstance();
 		BasicSingleton instance2 = BasicSingleton.getInstance();
@@ -31,4 +31,7 @@ public class BasicSingleton {
 			System.out.println("Instances are different. Singleton not implemented correctly.");
 		}
 	}
-}
+}  
+
+
+

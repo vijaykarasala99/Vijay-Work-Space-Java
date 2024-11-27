@@ -9,7 +9,7 @@ public class ArmstrongNumber {
 //	Every single-digit number is an Armstrong number: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 //	2-Digit Armstrong Numbers
 //	There are no 2-digit Armstrong numbers.
-//	3-Digit Armstrong Numbers
+//	3-Digit Armstrong Numbers: 
 //	153 (1^3 + 5^3 + 3^3 = 153)
 //	370 (3^3 + 7^3 + 0^3 = 370)
 //	371 (3^3 + 7^3 + 1^3 = 371)
