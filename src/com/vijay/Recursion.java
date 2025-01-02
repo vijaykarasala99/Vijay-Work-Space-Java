@@ -3,6 +3,8 @@ package com.vijay;
 import java.util.Scanner;
 
 public class Recursion {
+//"A function calls itself until it reaches the base case, then unwinds to give the result
+// if there's no base case, it keeps calling itself and causes a stack overflow error."
 
 	public static long factorial(int n) {
 		if (n < 0) {
@@ -13,12 +15,11 @@ public class Recursion {
 		}
 		return n * factorial(n - 1);
 	}
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a number: ");
-		int i = sc.nextInt();
-		System.out.println("Factorial of " + i + " is: " + factorial(i));
+		int n = sc.nextInt();
+		System.out.println("Factorial of " + n + " is: " + factorial(n));
 		sc.close();
 	}
 }

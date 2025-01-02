@@ -17,9 +17,8 @@ public class GarbageCollectorExample {
        
         Runtime.getRuntime().gc();
         System.out.println("Garbage Collection requested by Runtime class.");
-
-
     }
+	
     // Override finalize method to see when an object is garbage collected
     @Override
     protected void finalize() {

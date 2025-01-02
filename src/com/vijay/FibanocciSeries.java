@@ -18,8 +18,8 @@ public class FibanocciSeries {
 			System.out.print(", " + c);
 			a = b;
 			b = c;
-
 		}  
-		System.out.println();
+	System.out.println();
 	}
 }
+

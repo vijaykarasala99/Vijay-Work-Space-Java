@@ -3,7 +3,7 @@ package com.vijay.oops;
 public class StaticVariables {
 	// Instance methods can access both instance variables (because they are part of the object)
 	// and static variables (because they belong to the class).
-	// Static methods, on the other hand, can only access static variables and other
+	// Static methods can only access static variables and other
 	// static methods, as they do not have access to instance-specific data.
 
 	       int a = 10;

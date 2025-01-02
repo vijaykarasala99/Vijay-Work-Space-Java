@@ -2,8 +2,8 @@ package com.vijay;
 
 public class SwitchExample {
 	public static void main(String[] args) {
-		String a = "hlo";
-		switch (a) {
+	    String l = "hlo";
+		switch (l) {
 		case "hlo":
 			System.out.println("ME");
 			break;

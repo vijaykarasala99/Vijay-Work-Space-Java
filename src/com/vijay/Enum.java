@@ -2,11 +2,11 @@ package com.vijay;
 
 public class Enum {
 
-// enum is a special datatype in java used to define a collection of constants
+//An enum (short for "enumeration") in Java is a special data type 
+//used to define a collection of constants
 	public enum Day {
 		SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
 	}
-
 	public static void main(String[] args) {
 
 		Day today = Day.THURSDAY;
@@ -24,3 +24,4 @@ public class Enum {
 		}
 	}
 }
+
