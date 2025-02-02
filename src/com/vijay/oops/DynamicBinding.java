@@ -24,5 +24,6 @@ class Main {
         // Parent class reference holding a Child object
         DynamicBinding childObj = new Derived();
         childObj.display(); // Calls Child class method (Dynamic Binding)
-    }
-}
+   }}
+
+

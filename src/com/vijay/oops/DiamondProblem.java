@@ -1,9 +1,10 @@
 package com.vijay.oops;
 
 interface A {
-	// Only constants (variables that are public, static, and final) can exist in interfaces
+	// Only constants (variables that are public, static, and final) can exist in
+	// interfaces
 	// instance variables are not allowed in interfaces.
-	public static final int a=100;
+	public static final int a = 100;
 
 	default void show() {
 		System.out.println("Interface A --> Show method...");
@@ -33,4 +34,3 @@ public class DiamondProblem implements A, B {
 		d.show();
 	}
 }
-

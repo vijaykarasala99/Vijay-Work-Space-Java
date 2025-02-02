@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class ArrayBasicOperations {
 
+	
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("enter size of array: ");
@@ -25,4 +27,4 @@ public class ArrayBasicOperations {
 			System.out.println(arr[i]);
 	  }
 	}
-}
+} 
