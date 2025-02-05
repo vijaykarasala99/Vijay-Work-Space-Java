@@ -1,8 +1,8 @@
- package com.vijay;
+package com.vijay;
 
 import java.util.Scanner;
 
-public class ArmstrongNumber {
+public class ArmstrongNumber{
 
 //  Sum of nth power of each digit equal to the number is called narcissistic number or armstrong
 //	1-Digit Armstrong Numbers
