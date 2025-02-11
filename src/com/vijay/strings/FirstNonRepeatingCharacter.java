@@ -3,7 +3,7 @@ package com.vijay.strings;
 public class FirstNonRepeatingCharacter {
     public static void main(String[] args) {
        
-        String s = "ababu";
+        String s = "abuxabu";
         char result = 0;
         
         for (int i = 0; i < s.length(); i++) {
