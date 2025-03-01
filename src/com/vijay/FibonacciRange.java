@@ -10,7 +10,6 @@ public class FibonacciRange {
 		int min = sc.nextInt();
 		System.out.print("Enter the maximum value: ");
 		int max = sc.nextInt();
-		sc.close();
 
 		int a = 0, b = 1;
 

@@ -7,6 +7,7 @@ public class Enum {
 	public enum Day {
 		SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
 	}
+	
 	public static void main(String[] args) {
 
 		Day today = Day.THURSDAY;

@@ -10,7 +10,7 @@ public class ArmstrongNumberInRange {
         System.out.print("Enter the end of the range: ");
         int end = sc.nextInt();
 
-        System.out.println("Armstrong numbers between " + start + " and " + end + ":");
+        System.out.println("Armstrong numbers between " + start + " and " + end + " is :");
 
         for (int i = start; i <= end; i++) {
             int temp = i;

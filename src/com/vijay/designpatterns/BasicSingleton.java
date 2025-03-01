@@ -1,9 +1,9 @@
 package com.vijay.designpatterns;
 
 public class BasicSingleton {
-// The Singleton pattern ensures a class has only one instance, providing a global point of access to it.
-// It’s commonly used for shared resources like database connections, logging, and configuration settings,
-// where multiple instances would be inefficient or cause inconsistencies.
+ // The Singleton pattern ensures a class has only one instance, providing a global point of access to it.
+ // It’s commonly used for shared resources like database connections, logging, and configuration settings,
+ // where multiple instances would be inefficient or cause inconsistencies.
 	
 	private static BasicSingleton instance;
 
@@ -19,8 +19,8 @@ public class BasicSingleton {
 		return instance;
 	}
 
-   public static void main(String[] args) {
-// Directly call the getInstance method without creating an instance of BasicSingleton
+  public static void main(String[] args) {
+  // Directly call the getInstance method without creating an instance of BasicSingleton
 		BasicSingleton instance1 = BasicSingleton.getInstance();
 		BasicSingleton instance2 = BasicSingleton.getInstance();
 		
