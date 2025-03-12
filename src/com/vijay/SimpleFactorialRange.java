@@ -22,7 +22,6 @@ public class SimpleFactorialRange {
         for (int i = start; i <= end; i++) {
             System.out.println("Factorial of " + i + " = " + factorial(i));
         }
-
         scanner.close();
     }
 }

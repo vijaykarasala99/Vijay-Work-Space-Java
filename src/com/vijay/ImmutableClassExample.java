@@ -12,7 +12,6 @@ public final class ImmutableClassExample {
         this.myNumber = number;
         this.myString = string;
     }
-    
     // Step 3: No setter methods
     // Step 4: Getters for fields (no setters)
     public int getMyNumber() {

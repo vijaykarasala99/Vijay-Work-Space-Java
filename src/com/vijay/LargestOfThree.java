@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class LargestOfThree {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Enter the first number: ");
         int num1 = sc.nextInt();
 
@@ -13,15 +12,15 @@ public class LargestOfThree {
 
         System.out.print("Enter the third number: ");
         int num3 = sc.nextInt();
-        
-        int largest = num1; // Assume num1 is the largest initially
-        if (num2 > largest) {
-            largest = num2; // If num2 is greater, update largest
+
+        if (num1 == num2 && num2 == num3) {
+            System.out.println("All numbers are equal: " + num1);
+        } else if (num1 >= num2 && num1 >= num3) {
+            System.out.println("The largest number is: " + num1);
+        } else if (num2 >= num1 && num2 >= num3) {
+            System.out.println("The largest number is: " + num2);
+        } else {
+            System.out.println("The largest number is: " + num3);
         }
-        if (num3 > largest) {
-            largest = num3; // If num3 is greater, update largest 
-        }
-        System.out.println("The largest number is: " + largest);
     }
 }
-

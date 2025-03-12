@@ -10,8 +10,7 @@ public class FactorialNumber {
 		int n = sc.nextInt();
 		if(n<1) {
 			System.out.println("Enter a Valid Number...");
-		}else {
-			
+		}else {	
 		long factorial = 1;
 		for (int i = 1; i <= n; i++) {
 			factorial = factorial * i;

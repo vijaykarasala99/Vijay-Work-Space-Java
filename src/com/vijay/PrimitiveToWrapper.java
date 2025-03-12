@@ -3,8 +3,8 @@ package com.vijay;
 public class PrimitiveToWrapper {
 
 	public static void main(String[] args) {
-		// Autoboxing and unboxing were introduced in Java 5.
-        //Autoboxing:Automatic conversion of a primitive type to its corresponding wrapper class
+		// Autoboxing and unboxing were introduced in Java 5 (JDK 1.5).
+        // Autoboxing:Automatic conversion of a primitive type to its corresponding wrapper class
 		// Unboxing:Automatic conversion of a wrapper to its corresponding primitive
 
 		// Using Integer.valueOf() Method

@@ -22,9 +22,9 @@ public class PalindromeInRange {
 				temp = temp / 10;
 			}
 			if (i == rev) {
-				System.out.println(i + "is Palindrome");
+				System.out.println(i + " :is Palindrome");
 			} else {
-				System.out.println(i + "is NOT Palindrome");
+				System.out.println(i + " :is NOT Palindrome");
 			}
 		}
 }

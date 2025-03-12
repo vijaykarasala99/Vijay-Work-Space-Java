@@ -3,8 +3,8 @@ package com.vijay;
 import java.security.SecureRandom;
 
 public class GenerateRandomOTP {
+	
     // Java's SecureRandom class, which provides a cryptographically strong random number generator.
-    
 	private static final SecureRandom secureRandom = new SecureRandom(); //thread-safe
     private static final String DIGITS = "0123456789";
 
