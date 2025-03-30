@@ -11,8 +11,9 @@ public class PasswordPrompt {
             System.out.print("Set a strong password (at least 6 characters): ");
             password = scanner.nextLine();
         } while (password.length() < 6);
-
         System.out.println("Password set successfully!");
         scanner.close();
     }
 }
+
+

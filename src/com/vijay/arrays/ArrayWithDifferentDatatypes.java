@@ -36,7 +36,7 @@ public class ArrayWithDifferentDatatypes {
         System.out.println(b[4]); // Outputs: null (default value for uninitialized references)
 
         // Correct way to initialize a StringBuffer array
-        // StringBuffer[] b1 = {"h","hello"}; // Compile-time error (requires explicit objects)
+        //StringBuffer[] b1 = {"h","hello"}; // Compile-time error (requires explicit objects)
         StringBuffer[] b2 = {new StringBuffer("h"), new StringBuffer("hello")};
 
         System.out.println("======> " + b2); // Outputs the reference of the array
@@ -60,7 +60,7 @@ public class ArrayWithDifferentDatatypes {
         Integer wrapintarr[] = new Integer[5];
         wrapintarr[0] = 10; // Assigning values to the array
         wrapintarr[1] = 20;
-
+       
         // Iterating and printing values of the Integer array
         for (Integer num : arr) {
             System.out.println(num); // Outputs each value in the array

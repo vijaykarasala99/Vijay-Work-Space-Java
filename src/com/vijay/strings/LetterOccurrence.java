@@ -1,6 +1,6 @@
 package com.vijay.strings;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class LetterOccurrence {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
         
-        Map<Character, Integer> lettercount = new HashMap<>();
+        Map<Character, Integer> lettercount = new LinkedHashMap<>();
         
         // Count occurrences of each character
         for (int i = 0; i < input.length(); i++) {

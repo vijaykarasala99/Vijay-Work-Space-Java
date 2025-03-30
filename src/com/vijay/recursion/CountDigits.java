@@ -7,10 +7,10 @@ public class CountDigits {
     }
 
     public static int countDigits(int num) {
-        if (num == 0) {
-            return 0;  // Base case
-        }
-        return 1 + countDigits(num / 10);  // Recursive call
+    	 if (num < 10) { // Base case (covers 0 and single-digit numbers)
+             return 1;
+         }
+         return 1 + countDigits(num / 10); // Recursive call
     }
 }
 

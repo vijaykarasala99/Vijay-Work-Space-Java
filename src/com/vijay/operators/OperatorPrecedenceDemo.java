@@ -6,17 +6,19 @@ public class OperatorPrecedenceDemo {
         int a = (2 + 3) * 4;  // 20
         System.out.println("Parentheses: (2 + 3) * 4 = " + a);
 
-        // Postfix
+        // Postfix-Unary
         int b = 5;
         System.out.println("Post-increment: b++ = " + b++);  // 5
         System.out.println("Post-decrement: b-- = " + b--);  // 6
 
-        // Unary
+        // Prefix-Unary
         int c = 5;
         System.out.println("Pre-increment: ++c = " + ++c);  // 6
         System.out.println("Pre-decrement: --c = " + --c);  // 5
+        
         System.out.println("Unary plus: +c = " + +c);  // 5
         System.out.println("Unary minus: -c = " + -c);  // -5
+        
         System.out.println("Bitwise complement: ~c = " + ~c);  // -6
         System.out.println("Logical NOT: !true = " + !true);  // false
        

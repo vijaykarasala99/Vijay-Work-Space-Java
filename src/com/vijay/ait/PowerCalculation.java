@@ -5,8 +5,10 @@ public class PowerCalculation {
         System.out.println(base + " raised to " + exponent + " is: " + power(base, exponent));
     }
 
-    public static int power(int base, int exponent) {
-        if (exponent == 0) return 1;
+    public static long power(int base, int exponent) {
+        if (exponent == 0) {
+        	return 1;
+        }
         return base * power(base, exponent - 1);
     }
 }

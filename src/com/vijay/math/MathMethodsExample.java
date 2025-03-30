@@ -22,6 +22,12 @@ public class MathMethodsExample {
         System.out.println("Math.ceil(5.3): " + ceil); // Output: 6.0
         System.out.println("Math.floor(5.7): " + floor); // Output: 5.0
         
+        // Absolute value
+        int absInt = Math.abs(-5);
+        double absDouble = Math.abs(-5.5);
+        System.out.println("Math.abs(-5): " + absInt); // Output: 5
+        System.out.println("Math.abs(-5.5): " + absDouble); // Output: 5.5
+        
         // Random number
         double random = Math.random();
         System.out.println("Math.random(): " + random); // Output: A random double between 0.0 and 1.0
@@ -34,12 +40,7 @@ public class MathMethodsExample {
         System.out.println("Math.log10(10): " + log10); // Output: 1.0
         System.out.println("Math.exp(2): " + exp); // Output: ~7.389056
         
-        // Absolute value
-        int absInt = Math.abs(-5);
-        double absDouble = Math.abs(-5.5);
-        System.out.println("Math.abs(-5): " + absInt); // Output: 5
-        System.out.println("Math.abs(-5.5): " + absDouble); // Output: 5.5
-        
+  
         // Exact arithmetic methods
         try {
             int addExact = Math.addExact(1000000000, 1000000000);

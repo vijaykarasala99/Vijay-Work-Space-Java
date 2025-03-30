@@ -9,16 +9,20 @@ public class PerfectNumbersInRange {
 		int a = sc.nextInt();
 		System.out.print("enter upper bound: ");
 		int b = sc.nextInt();
-		
+
 		for (int i = a; i <= b; i++) {
+			if (i <= 0) {
+				continue;
+			}
 			int sum = 0;
 			for (int j = 1; j < i; j++) {
 				if (i % j == 0) {
 					sum = sum + j;
 				}
 			}
-			if (sum == i && i>1) {
-		    System.out.println(i);
+			if (sum == i && i > 1) {
+				System.out.println(i);
 			}
 		}
-}}
+	}
+}

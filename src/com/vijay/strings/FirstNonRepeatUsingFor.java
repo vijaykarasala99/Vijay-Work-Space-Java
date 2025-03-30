@@ -1,6 +1,6 @@
 package com.vijay.strings;
 
-public class FirstNonRepeatUsinfFor {
+public class FirstNonRepeatUsingFor {
 
 	public static void main(String[] args) {
 
