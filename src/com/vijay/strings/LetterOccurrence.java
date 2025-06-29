@@ -17,7 +17,6 @@ public class LetterOccurrence {
             char ch = input.charAt(i);
             lettercount.put(ch, lettercount.getOrDefault(ch, 0) + 1);
         }
-        
         // Print each character's occurrences
         System.out.println("Character occurrences:");
         for (Character ch : lettercount.keySet()) {
@@ -26,3 +25,5 @@ public class LetterOccurrence {
         scanner.close();
     }
 }
+
+

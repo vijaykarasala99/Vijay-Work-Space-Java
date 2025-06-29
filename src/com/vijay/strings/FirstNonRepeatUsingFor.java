@@ -4,8 +4,7 @@ public class FirstNonRepeatUsingFor {
 
 	public static void main(String[] args) {
 
-		String s = "ABAGADBAGS";
-
+		String s = "ABAZGADBAGSZ";
 		for (int i = 0; i < s.length(); i++) {
 			boolean unique = true;
 			for (int j = 0; j < s.length(); j++) {
@@ -13,13 +12,12 @@ public class FirstNonRepeatUsingFor {
 					unique = false;
 					break;
 				}
-
 			}
 			if (unique) {
 				System.out.println(s.charAt(i));
 				break;
 			}
 		}
-
 	}
 }
+

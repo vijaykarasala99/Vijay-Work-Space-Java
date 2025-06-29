@@ -3,6 +3,9 @@ import java.util.Scanner;
 
 public class LargestOfThree {
     public static void main(String[] args) {
+    	
+    	// int max = (a >= b && a >= c) ? a : (b >= a && b >= c) ? b : c;
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first number: ");
         int num1 = sc.nextInt();

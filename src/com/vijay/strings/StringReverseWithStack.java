@@ -16,6 +16,6 @@ public class StringReverseWithStack {
         while (!stack.isEmpty()) {
             reversed.append(stack.pop());
         }
-        System.out.println("Reversed String: " + reversed);
+     System.out.println("Reversed String: " + reversed);
     }
 }

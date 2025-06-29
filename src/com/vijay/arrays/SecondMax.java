@@ -15,7 +15,6 @@ public class SecondMax {
 				secondmax = arr[i];
 			}
 		}
-
 		if (secondmax == Integer.MIN_VALUE) {
 			System.out.println("There is no second maximum value in the array.");
 		} else {
@@ -24,3 +23,4 @@ public class SecondMax {
 		}
 	}
 }
+

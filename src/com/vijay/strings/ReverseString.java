@@ -10,7 +10,8 @@ public class ReverseString {
         String s1 = sc.nextLine();
         String s2="";
         for (int i = s1.length()-1; i >=0; i--) {
-		           s2=s2+s1.charAt(i);
+        	      char ch = s1.charAt(i);
+		           s2+=ch;
 		}
         System.out.println(s2);
         sc.close();

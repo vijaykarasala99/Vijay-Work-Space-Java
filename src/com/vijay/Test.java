@@ -14,7 +14,8 @@ class QuestionClass {
 
 public class Test extends QuestionClass implements QuestionInterface {
 	public static void main(String[] args) {
-		new Test().display();
+		Test t = new Test();
+		t.display();
 	}
 }
 //The Test class inherits the display() method from QuestionClass, 

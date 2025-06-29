@@ -1,6 +1,5 @@
 package com.vijay.strings;
 
-
 public class StringMaxLengthWord {
 
 	public static void main(String[] args) {
@@ -22,6 +21,4 @@ public class StringMaxLengthWord {
         System.out.println("Second longestword:   "   + smax);
 	}
 }
-
-
 

@@ -1,6 +1,7 @@
 package com.vijay.arrays;
 
 public class ArrayWithReferenceType {
+	
 	String name;
 
 	ArrayWithReferenceType(String name) {

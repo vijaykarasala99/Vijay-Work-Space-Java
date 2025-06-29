@@ -25,6 +25,7 @@ public class VowelsConsonentsInString {
 		System.out.println(whites);
 		System.out.println(digits);
 		System.out.println(special);
-
 	}
 }
+
+

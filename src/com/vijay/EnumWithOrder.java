@@ -12,13 +12,12 @@ public class EnumWithOrder {
         this.orderId = orderId;
         this.status = status;
     }
-
     public void printStatus() {
         System.out.println("Order " + orderId + " is " + status);
     }
-
     public static void main(String[] args) {
         EnumWithOrder order1 = new EnumWithOrder(101, OrderStatus.SHIPPED);
         order1.printStatus(); // ✅ Output: Order 101 is SHIPPED
     }
 }
+

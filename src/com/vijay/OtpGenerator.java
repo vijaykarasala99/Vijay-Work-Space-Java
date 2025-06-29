@@ -7,8 +7,7 @@ public class OtpGenerator {
 
   public static void main(String[] args) {
 	//old approach with Math.random
-	//int otp = (int)(Math.random() * 9000) + 1000;
-	 
+	//int otp = (int)(Math.random() * 9000) + 1000; 
 	  String otp = generateOtp();
 	  System.out.println("Generated OTP: " + otp);
 	}

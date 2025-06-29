@@ -15,9 +15,10 @@ public class ArmstrongNumberInRange {
         for (int i = start; i <= end; i++) {
             int temp = i;
             int sum = 0;
+            int rem=0;
             int length = String.valueOf(i).length();
             while (temp != 0) {
-                int rem = temp % 10;
+                rem = temp % 10;
                 sum += Math.pow(rem, length);
                 temp = temp / 10;
             }

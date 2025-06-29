@@ -9,7 +9,7 @@ public class RemoveACharacter {
         
         System.out.print("Enter a string: ");
         String s = sc.nextLine();
-        
+       
         System.out.print("Enter a character you want to remove: ");
         char ch = sc.next().charAt(0);  
         

@@ -15,9 +15,8 @@ public class LambdaExample {
 		languages.forEach(lang -> System.out.println("Language: " + lang));
 
 		System.out.println("Example 3: Lambda expression with functional interface");
-		MyCalculator calculator = (a, b) -> a + b;
-		int result = calculator.calculate(10, 5);
-		System.out.println("Result: " + result);
+		MyCalculator add = (a, b) -> a + b;
+		System.out.println(add.calculate(10, 20));
 	    }
 
 	// Functional interface for example 3

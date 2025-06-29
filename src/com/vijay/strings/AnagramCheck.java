@@ -17,12 +17,11 @@ public class AnagramCheck {
             System.out.println("Not Anagrams");
             return;
         }
-
         char[] arr1 = s1.toCharArray();
         char[] arr2 = s2.toCharArray();
         Arrays.sort(arr1);
         Arrays.sort(arr2);
-
         System.out.println(Arrays.equals(arr1, arr2) ? "Anagrams" : "Not Anagrams");
     }
 }
+

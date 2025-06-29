@@ -15,7 +15,6 @@ public class Occurrence {
         if (s == null || s.trim().isEmpty()) {
             System.out.println("Invalid input: Please enter a valid string.");
         }
-
         System.out.print("Enter a character to find its occurrence: ");
         char ch = sc.next().charAt(0);
         

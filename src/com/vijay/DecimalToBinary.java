@@ -10,8 +10,17 @@ public class DecimalToBinary {
 		double number = sc.nextDouble();
 		int i = (int) number;
 		
-		String binary = Integer.toBinaryString(i);
-		System.out.println("Binary representation: " + binary);		
-		sc.close();
+		//Here In Long There Is A Method Long.toBinaryString
+		long longValue=12546897;
+		String binary1=Long.toBinaryString(longValue);
+		
+		//Here In Long There Is A Method Integer.toBinaryString
+		String binary2 = Integer.toBinaryString(i);
+		
+		System.out.println("Binary representation: " + binary1);		
+		System.out.println("Binary representation: " + binary2);		
+		
 	}
 }
+
+

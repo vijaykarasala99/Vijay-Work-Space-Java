@@ -12,5 +12,6 @@ public class CountDigits {
          }
          return 1 + countDigits(num / 10); // Recursive call
     }
+    
 }
 

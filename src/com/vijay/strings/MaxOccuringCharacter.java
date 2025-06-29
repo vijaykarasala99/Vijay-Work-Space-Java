@@ -24,7 +24,6 @@ public class MaxOccuringCharacter {
 				maxChar = s.charAt(i);
 			}
 		}
-
 		System.out.println("Max count: " + maxCount + " Character is: " + maxChar);
 	}
 }

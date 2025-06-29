@@ -2,14 +2,16 @@ package com.vijay.recursion;
 
 public class PowerCalculationRecursion {
 
-	static int power(int x, int n) {
-		if (n == 0) {
-			return 1;
-		}
-		return x * power(x, n - 1);
-	}
+    static int power(int base, int exp) {
+        if (exp == 0) {
+            return 1; // base case: anything power 0 = 1
+        }
+        return base * power(base, exp - 1); // recursive case
+    }
 
-	public static void main(String[] args) {
-		System.out.println(power(2, 3)); // 2^3 = 8
-	}
+    public static void main(String[] args) {
+        int base = 2;
+        int exp = 3;
+        System.out.println(base + " raised to power " + exp + " is: " + power(base, exp));
+    }
 }

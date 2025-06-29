@@ -19,7 +19,7 @@ public class WorkerExample {
 			System.out.println("Worker stopped.");
 		});
 		worker.start();
-}
+	}
 
 	public void stopWorker() {
 		running = false; // Flag updated to stop the worker thread

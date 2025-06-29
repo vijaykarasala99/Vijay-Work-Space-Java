@@ -2,7 +2,7 @@ package com.vijay.recursion;
 
 public class FibonacciRecursion {
 	
-    static int fibonacci(int n) {
+    public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
         }
@@ -10,10 +10,10 @@ public class FibonacciRecursion {
     }
     
     public static void main(String[] args) {
-        int n = 5; 
-        for (int i = 0; i < n; i++) {
-            System.out.print(fibonacci(i) + " ");
-        }
+    	 int n = 5; 
+         for (int i = 0; i < n; i++) {
+             System.out.print(fibonacci(i) + " ");
+         }
     }
 }
 

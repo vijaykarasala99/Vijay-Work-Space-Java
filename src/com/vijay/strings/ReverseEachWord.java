@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class ReverseEachWord {
 
 	public static void main(String[] args) {
-		String str = "hello jay";
-		String[] arr = str.split(" ");
-		//System.out.println(Arrays.toString(arr));
+		String str = "hello  jay  Me";
+		String[] arr = str.split("\\s+");
+		
 		String result = "";
 
 		for (String word : arr) {

@@ -12,17 +12,16 @@ public class WrapperClasses {
 		int a = 10;
 		Integer b1 = new Integer(a); // Boxing using constructor (deprecated since Java 9)
 		Integer b2 = Integer.valueOf(a); // Boxing using valueOf (preferred)
-
-		// check datatype using instaceof operator
+      
+		// Check datatype using instaceof operator
 		boolean result = b2 instanceof Object;
 		System.out.println(result);
-
+        
 		// Unboxing: Converting Integer object to int primitive
 		int u1 = b1.intValue(); // Explicit unboxing (usually unnecessary since Java 5)
 		int u2 = b2.intValue();
 
-		// Note: From Java 5 onwards, the compiler automatically handles boxing and
-		// unboxing.
+		// Note: From Java 5 onwards, the compiler automatically handles boxing and unboxing. 
 		// This is called autoboxing and auto-unboxing.
 		int ab = 10;
 		Integer b = ab; // Autoboxing (primitive to wrapper)

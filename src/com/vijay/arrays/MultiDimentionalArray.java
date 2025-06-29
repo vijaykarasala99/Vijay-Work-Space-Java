@@ -4,7 +4,10 @@ public class MultiDimentionalArray {
 
 	public static void main(String[] args) {
 
-		int[][] array = { { 1, 2, 3, 5 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } };
+		int[][] array = { { 1, 2, 3, 5 }, 
+				            { 4, 5, 6 },  
+				            { 7, 8, 9 }, 
+				            { 10, 11, 12 } };
 
 		System.out.println("Given array Length: " + array.length); // return rows length: 4
 
@@ -15,7 +18,9 @@ public class MultiDimentionalArray {
 			}
 			System.out.println();
 		}
-		System.out.println("Access element: " + array[0][3]);
+		System.out.println("Access element: " + array[1][2]);
+		
+		System.out.println("=================================");
 
 		// Print the array using an enhanced for loop
 		for (int[] k : array) {

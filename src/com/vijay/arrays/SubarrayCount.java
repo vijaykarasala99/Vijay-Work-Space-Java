@@ -13,7 +13,6 @@ public class SubarrayCount {
                 count++; 
             }
         }
-
         System.out.println("Total number of subarrays: " + count);
     }
 }

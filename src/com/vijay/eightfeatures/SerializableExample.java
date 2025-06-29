@@ -1,13 +1,13 @@
 package com.vijay.eightfeatures;
 import java.io.*;
 
-class Employee implements Serializable {
+class Employz implements Serializable {
     private static final long serialVersionUID = 1L; // recommended for Serializable classes
     String name;
     int age;
     String department;
 
-    public Employee(String name, int age, String department) {
+    public Employz(String name, int age, String department) {
         this.name = name;
         this.age = age;
         this.department = department;
@@ -21,7 +21,7 @@ class Employee implements Serializable {
 
 public class SerializableExample {
     public static void main(String[] args) {
-        Employee employee = new Employee("John Doe", 30, "Engineering");
+    	Employz employee = new Employz("John Doe", 30, "Engineering");
 
         // Serialize the employee object to a file
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("employee.ser"))) {
@@ -32,9 +32,9 @@ public class SerializableExample {
         }
 
         // Deserialize the employee object from the file
-        Employee deserializedEmployee = null;
+        Employz deserializedEmployee = null;
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("employee.ser"))) {
-            deserializedEmployee = (Employee) ois.readObject();
+            deserializedEmployee = (Employz) ois.readObject();
             System.out.println("Employee deserialized: " + deserializedEmployee);
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

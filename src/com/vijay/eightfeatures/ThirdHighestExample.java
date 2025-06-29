@@ -8,7 +8,7 @@ public class ThirdHighestExample {
         List<Integer> numbers = Arrays.asList(10, 20, 4, 45, 99, 99, 56);
 
         Optional<Integer> thirdHighest = numbers.stream()
-            .distinct() // Remove duplicates
+            .distinct()                        // Remove duplicates
             .sorted(Comparator.reverseOrder()) // Sort in descending order
             .skip(2)                           // Skip the first two highest elements
             .findFirst();                      // Get the third highest

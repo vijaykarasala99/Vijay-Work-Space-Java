@@ -7,7 +7,7 @@ public class RemoveConsecutiveDuplicates {
 		String str = "aabbccdbabc";
 
 		StringBuffer sb = new StringBuffer();
-		
+		 
 		sb.append(str.charAt(0));
 		
 		for (int i = 1; i < str.length(); i++) {

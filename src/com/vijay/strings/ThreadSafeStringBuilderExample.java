@@ -2,6 +2,7 @@ package com.vijay.strings;
 
 public class ThreadSafeStringBuilderExample {
     public static void main(String[] args) {
+    	
         StringBuilder sb = new StringBuilder("Initial");
 
         // Thread 1
@@ -19,7 +20,6 @@ public class ThreadSafeStringBuilderExample {
                 System.out.println(sb.toString());
             }
         });
-
         thread1.start();
         thread2.start();
     }

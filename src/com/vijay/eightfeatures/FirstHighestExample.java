@@ -19,3 +19,13 @@ public class FirstHighestExample {
 		}
 	}
 }
+
+/**
+int highest = numbers.stream()
+.distinct()
+.max(Integer::compare)
+.orElseThrow(); // or use .orElse(0) for default
+*/
+
+
+

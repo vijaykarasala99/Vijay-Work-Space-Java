@@ -37,7 +37,8 @@ public class ArraysStreamMethod {
                                           .boxed()  // Convert int to Integer
                                           .collect(Collectors.toList());
         System.out.println("List Of Even numbers: " + evenNumbers);
-        
     }
 }
+
+
 

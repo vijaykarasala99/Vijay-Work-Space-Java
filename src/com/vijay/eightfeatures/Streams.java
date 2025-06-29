@@ -17,6 +17,7 @@ public class Streams {
 	       list.add("me");
 	       list.add("uhhcsc");
 	       list.add("yes");
+	      
 	      Stream<String> stream =list.stream();
 	      stream.filter(name -> name.startsWith("v")).forEach(System.out::println);
 	     
