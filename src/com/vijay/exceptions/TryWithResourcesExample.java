@@ -13,8 +13,7 @@ public class TryWithResourcesExample {
 			System.out.print("Enter a line: ");
 			String input = br.readLine();
 			System.out.println("You entered: " + input);
-
-		} catch (IOException e) {
+		}catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
