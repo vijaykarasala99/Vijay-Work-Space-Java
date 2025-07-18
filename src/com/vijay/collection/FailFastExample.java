@@ -12,6 +12,7 @@ public class FailFastExample {
 
         Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()) {
+        	
             System.out.println(iterator.next());
             list.add("D");  
         }

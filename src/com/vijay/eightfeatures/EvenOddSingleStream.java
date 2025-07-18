@@ -8,7 +8,7 @@ public class EvenOddSingleStream {
 
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         Map<Boolean, List<Integer>> map = numbers.stream()
-        		                          .collect(Collectors.partitioningBy(n -> (n % 2 == 0)));
+        		                          .collect(Collectors.groupingBy(n -> (n % 2 == 0)));
 
 		List<Integer> evenNumbers = map.get(true);
 		List<Integer> oddNumbers = map.get(false);

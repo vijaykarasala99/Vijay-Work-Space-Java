@@ -17,10 +17,10 @@ public class LambdaExample {
 		System.out.println("Example 3: Lambda expression with functional interface");
 		MyCalculator add = (a, b) -> a + b;
 		System.out.println(add.calculate(10, 20));
-	    }
+	}
 
 	// Functional interface for example 3
-	    interface MyCalculator {
+	interface MyCalculator {
 		int calculate(int a, int b);
 
 	}

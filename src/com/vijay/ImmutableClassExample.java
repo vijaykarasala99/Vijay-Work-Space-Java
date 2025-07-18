@@ -22,6 +22,7 @@ public final class ImmutableClassExample {
     }
 }
 
+
 //Characteristics of an Immutable Class:
 
 //All fields are final: The fields of the class are declared as final so that their values cannot be changed once assigned.

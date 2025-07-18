@@ -20,7 +20,6 @@ public class AlphabetFullPyramid {
             for (int j = i - 2; j >= 0; j--) {
                 System.out.print((char)('A' + j));
             }
-
             System.out.println();
         }
 

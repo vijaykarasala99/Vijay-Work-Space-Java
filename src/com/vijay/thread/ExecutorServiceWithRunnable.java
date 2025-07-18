@@ -10,7 +10,6 @@ public class ExecutorServiceWithRunnable {
 
      Runnable task1 = () -> System.out.println("Task 1");
      Runnable task2 = () -> System.out.println("Task 2");
-
      service.execute(task1);
      service.execute(task2);
 

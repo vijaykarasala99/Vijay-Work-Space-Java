@@ -6,7 +6,6 @@ public class MyRunnable implements Runnable {
 	    public void run() {
 	    System.out.println("Running in thread: " + Thread.currentThread().getId());
 	    }
-    
         public static void main(String[] args) {
         
     	MyRunnable myRunnable = new MyRunnable();

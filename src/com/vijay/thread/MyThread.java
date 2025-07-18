@@ -17,12 +17,11 @@ public class MyThread extends Thread {
 			// but for the sake of this example, it's shown here.
 			th.notify();
 		}
-		
 		System.out.println(th + "   :is running");
 		System.out.println(th.getId());
 		System.out.println(th.getPriority());
         System.out.println(th.getState());
-		
+       
         /**
 		 * run Method: Invokes the task in the current thread. It’s just a normal method
 		 * call and does not start a new thread.
@@ -30,8 +29,7 @@ public class MyThread extends Thread {
 		 * start Method: Starts a new thread, and within that new thread, it calls the
 		 * run method to execute the task. This is the correct way to initiate a new
 		 * thread
-		 */
-        
+		 */   
 	}
 }
 

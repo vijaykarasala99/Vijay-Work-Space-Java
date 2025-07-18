@@ -6,8 +6,8 @@ public class Java11StringMethodsDemo {
 
 	public static void main(String[] args) {
 		String str1 = "   "; // Only spaces
-		String str2 = " Hello\nWorld\nJava "; // Contains multiple lines
-		String str3 = "\u2001 Java \u2001"; // Unicode whitespace
+		String str2 = " Hello\nWorld\nJava ";  // Contains multiple lines
+		String str3 = "\u2001 Java \u2001";    // Unicode whitespace
 		String str4 = "Hi";
 
 		// 1. isBlank()

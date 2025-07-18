@@ -11,7 +11,9 @@ public class GroupBasedOnFirstLetter {
 
 		List<String> fruits = Arrays.asList("Apple", "Banana", "Mango", "Apricot");
 
-		Map<Character, List<String>> grouped = fruits.stream().collect(Collectors.groupingBy(fruit -> fruit.charAt(0)));
+		Map<Character, List<String>> grouped = 
+		
+				fruits.stream().collect(Collectors.groupingBy(fruit -> fruit.charAt(0)));
 
 		grouped.forEach((k, v) -> System.out.println(k + " ==> " + v));
 

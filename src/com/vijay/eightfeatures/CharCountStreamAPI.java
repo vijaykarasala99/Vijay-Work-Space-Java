@@ -6,7 +6,7 @@ public class CharCountStreamAPI {
     public static void main(String[] args) {
         String s = "virtusa Consulting Private limited";
 
-        Map<Character, Long> map = s.replaceAll(" ", "") // remove spaces
+        Map<Character, Long> map = s.replaceAll("\\s+", "") // remove spaces
             .chars()
             .mapToObj(c -> (char) c)
             .collect(Collectors.groupingBy(c -> c, Collectors.counting()));

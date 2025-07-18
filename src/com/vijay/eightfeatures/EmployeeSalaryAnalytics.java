@@ -47,4 +47,13 @@ public class EmployeeSalaryAnalytics {
         System.out.println("Maximum Salary Employee: " + maxSalary.get());
     }
 }
+// FOR PRIMITIVES BELOW APPROACH:
+//double avg = list.stream()
+//.mapToInt(EmployeeDataRecord::getSalary)
+//.average()
+//.orElse(0.0);
+//
+//System.out.println("Average Salary: " + avg);
+
+
 
