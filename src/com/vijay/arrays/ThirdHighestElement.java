@@ -4,6 +4,7 @@ public class ThirdHighestElement {
 
 	public static void main(String[] args) {
 		int[] arr = { 10, 66, 58, 47, 63, 98, 78 };
+		
 		int first = Integer.MIN_VALUE, second = Integer.MIN_VALUE, third = Integer.MIN_VALUE;
 
 		for (int num : arr) {
