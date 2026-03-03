@@ -1,8 +1,9 @@
 package com.vijay.oops;
 
 interface A {
-	// Only constants (variables that are public, static, and final) can exist in interfaces
-	
+	// Only constants (variables that are public, static, and final) can exist in
+	// interfaces
+
 	// instance variables are not allowed in interfaces.
 	public static final int a = 100;
 
@@ -14,6 +15,11 @@ interface A {
 interface B {
 	default void show() {
 		System.out.println("Interface B --> Show method...");
+	}
+
+	// From Java 9, private methods are allowed in interfaces
+	private void helper() {
+		System.out.println("Helper method");
 	}
 }
 
