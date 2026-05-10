@@ -1,0 +1,304 @@
+MULTI THEREADING:
+==========================
+
+•thread priority and its use
+•Can we make multiple threads thread safe and how
+• concurrency problem
+•inter thread communication 
+•dead lock example explanation (program flow)
+•callable and future
+•completable future use
+
+__________________________________________________________
+
+class MyThread extends Thread {
+
+    public MyThread(String name, int priority) {
+        super(name);
+        setPriority(priority);
+    }
+
+    public void run() {
+
+        System.out.println(
+                getName() +
+                " Priority : " +
+                getPriority());
+    }
+}
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        MyThread t1 =
+                new MyThread("LOW", 1);
+
+        MyThread t2 =
+                new MyThread("HIGH", 10);
+
+        t1.start();
+        t2.start();
+    }
+}
+
+
+
+
+_________________________________________________________________
+
+
+package multithreads;
+
+public class ThreadsExample {
+
+	synchronized void print() {
+
+		for (int i = 1; i <= 5; i++) {
+
+			System.out.println(Thread.currentThread().getName() + " : " + i);
+		}
+	}
+
+	public static void main(String[] args) {
+		ThreadsExample t = new ThreadsExample();
+
+		Thread t1 = new Thread(() -> t.print(), "Thread-1");
+
+		Thread t2 = new Thread(() -> t.print(), "Thread-2");
+
+		t1.start();
+		t2.start();
+	}
+}
+
+
+
+_____________________________________________________________
+
+package multithreads;
+
+public class ConcurrencyProblem {
+
+	int count = 0;
+
+	void increment() {
+		count++;
+	}
+
+	public static void main(String[] args) throws Exception {
+
+		ConcurrencyProblem t = new ConcurrencyProblem();
+
+		Thread t1 = new Thread(() -> {
+
+			for (int i = 1; i <= 1000; i++) {
+				t.increment();
+			}
+		});
+
+		Thread t2 = new Thread(() -> {
+
+			for (int i = 1; i <= 1000; i++) {
+				t.increment();
+			}
+		});
+
+		t1.start();
+		t2.start();
+
+		t1.join();
+		t2.join();
+
+		System.out.println(t.count);
+	}
+}
+
+___________________________________________________________________________________
+
+
+
+package multithreads;
+
+public class InterThreadCommunication {
+
+	synchronized void consumer() {
+
+		System.out.println("Consumer waiting for data...");
+
+		try {
+			wait();
+		} catch (Exception e) {
+		}
+
+		System.out.println("Consumer received data");
+	}
+
+	synchronized void producer() {
+
+		System.out.println("Producer produced data");
+
+		notify();
+	}
+
+	public static void main(String[] args) {
+
+		InterThreadCommunication obj = new InterThreadCommunication();
+
+		Thread consumerThread = new Thread(() -> obj.consumer());
+
+		Thread producerThread = new Thread(() -> obj.producer());
+
+		consumerThread.start();
+
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+		}
+
+		producerThread.start();
+	}
+}
+
+
+
+________________________________________________________________
+
+package multithreads;
+
+public class DeadLockDemo {
+
+	static Object a = new Object();
+	static Object b = new Object();
+
+	public static void main(String[] args) {
+
+		Thread t1 = new Thread(() -> {
+
+			synchronized (a) {
+
+				System.out.println("T1 got a");
+
+				try {
+					Thread.sleep(1000);
+				} catch (Exception e) {
+				}
+
+				System.out.println("T1 waiting for b");
+
+				synchronized (b) {
+				}
+			}
+		});
+
+		Thread t2 = new Thread(() -> {
+
+			synchronized (b) {
+
+				System.out.println("T2 got b");
+
+				try {
+					Thread.sleep(1000);
+				} catch (Exception e) {
+				}
+
+				System.out.println("T2 waiting for a");
+
+				synchronized (a) {
+				}
+			}
+		});
+
+		t1.start();
+		t2.start();
+	}
+}
+
+___________________________________________________________
+
+package multithreads;
+
+import java.util.concurrent.Callable;
+
+public class SimpleTask implements Callable<Integer> {
+
+    public Integer call() {
+        return 50 + 50;
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        SimpleTask task = new SimpleTask();
+
+        System.out.println(task.call());
+    }
+}
+____________________________________________________________
+
+
+import java.util.concurrent.*;
+
+class ExecutorDemo {
+
+    public static void main(String[] args) {
+
+        ExecutorService ex =
+                Executors.newSingleThreadExecutor();
+
+        ex.execute(() ->
+                System.out.println("Task executed"));
+
+        ex.shutdown();
+    }
+}
+
+
+
+______________________________________________________________________
+
+
+
+import java.util.concurrent.*;
+
+class FutureDemo {
+
+    public static void main(String[] args)
+            throws Exception {
+
+        ExecutorService ex =
+                Executors.newSingleThreadExecutor();
+
+        Future<Integer> f =
+                ex.submit(() -> 10 + 20);
+
+        System.out.println(f.get());
+
+        ex.shutdown();
+    }
+}
+
+________________________________________________________________________
+
+
+import java.util.concurrent.*;
+
+class CompletableFutureDemo {
+
+    public static void main(String[] args) {
+
+        CompletableFuture
+                .supplyAsync(() -> 10 + 20)
+                .thenApply(r -> r * 2)
+                .thenAccept(System.out::println);
+    }
+}
+
+__________________________________________________________________________
+
+
+
+
+
+
+
+
