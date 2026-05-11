@@ -1,0 +1,414 @@
+Java 9
+============
+
+
+List<String> list =
+Collections.unmodifiableList(
+Arrays.asList("A","B","C"));
+
+
+_______________________________
+
+
+Problem 2: Not Truly Immutable
+
+import java.util.*;
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        List<String> temp =
+                Arrays.asList("A","B");
+
+        List<String> list =
+                Collections.unmodifiableList(temp);
+
+        temp.set(0,"Java");
+
+        System.out.println(list);
+    }
+}
+
+_____________________________________
+
+
+
+1. List.of()
+
+import java.util.List;
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        List<String> list =
+                List.of("Java","Spring","Kafka");
+
+        System.out.println(list);
+
+        list.add("Redis");
+    }
+}
+Output
+[Java, Spring, Kafka]
+
+Exception:
+UnsupportedOperationException
+
+_____________________________________
+
+
+2. Set.of()
+
+import java.util.Set;
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Set<Integer> set =
+                Set.of(10,20,30);
+
+        System.out.println(set);
+    }
+}
+Output
+[10, 20, 30]
+Duplicate Check
+Set<Integer> set =
+        Set.of(10,20,20);
+Output
+IllegalArgumentException
+
+_____________________________________
+
+
+3. Map.of()
+Code
+import java.util.Map;
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Map<Integer,String> map =
+                Map.of(
+                        1,"Java",
+                        2,"Spring"
+                );
+
+        System.out.println(map);
+
+        map.put(3,"Kafka");
+    }
+}
+Output
+{1=Java, 2=Spring}
+
+Exception:
+UnsupportedOperationException
+
+_____________________________________
+
+Before Java 9
+
+interface BankService {
+
+    default void deposit() {
+
+        System.out.println(validateUser());
+
+        System.out.println("Deposit Success");
+    }
+
+    default void withdraw() {
+
+        System.out.println(validateUser());
+
+        System.out.println("Withdraw Success");
+    }
+
+    default String validateUser() {
+
+        return "User Validated";
+    }
+}
+
+
+** Drawback
+** validateUser() exposed publicly though used only internally.
+
+
+Java 9 Solution:
+
+interface BankService {
+
+    default void deposit() {
+
+        System.out.println(validateUser());
+
+        System.out.println("Deposit Success");
+    }
+
+    default void withdraw() {
+
+        System.out.println(validateUser());
+
+        System.out.println("Withdraw Success");
+    }
+
+    private String validateUser() {
+
+        return "User Validated";
+    }
+}
+
+** Benefit
+** Common logic reused internally and hidden from outside classes.
+
+____________________________________________________
+
+1. takeWhile()
+
+Before Java 9
+import java.util.List;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        List<Integer> transactions =
+                List.of(1000, 2000, 3000, 0, 5000);
+
+        transactions.stream()
+                .filter(amount -> amount > 0)
+                .forEach(System.out::println);
+    }
+}
+
+** Problem
+** filter() does not stop stream when condition fails.
+
+Output:
+
+1000
+2000
+3000
+5000
+
+
+Java 9 Solution
+
+import java.util.List;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        List<Integer> transactions =
+                List.of(1000, 2000, 3000, 0, 5000);
+
+        transactions.stream()
+                .takeWhile(amount -> amount > 0)
+                .forEach(System.out::println);
+    }
+}
+Output
+1000
+2000
+3000
+
+____________________________________________________
+
+
+1. dropWhile()
+
+The earlier filter() example gives same output, so it doesn't clearly show the actual drawback.
+
+Before Java 9
+import java.util.List;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        List<Integer> transactions =
+                List.of(0, 0, 1000, 0, 2000);
+
+        transactions.stream()
+                .filter(amount -> amount != 0)
+                .forEach(System.out::println);
+    }
+}
+
+
+Output
+1000
+2000
+Problem
+filter() removes ALL matching elements.
+Cannot skip only starting elements.
+Java 9 Solution
+import java.util.List;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        List<Integer> transactions =
+                List.of(0, 0, 1000, 0, 2000);
+
+        transactions.stream()
+                .dropWhile(amount -> amount == 0)
+                .forEach(System.out::println);
+    }
+}
+
+
+Output
+1000
+0
+2000
+
+Key Difference
+dropWhile() removes only leading matching elements.
+
+_______________________________________________________
+
+
+2. ofNullable()
+
+Correct again.
+
+Stream.of(null) itself does NOT throw exception.
+
+Actual issue comes during stream operations.
+
+Before Java 9
+import java.util.stream.Stream;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        String customer = null;
+
+        Stream.of(customer)
+                .map(String::toUpperCase)
+                .forEach(System.out::println);
+    }
+}
+
+
+Output
+NullPointerException
+
+
+Java 9 Solution
+import java.util.stream.Stream;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        String customer = null;
+
+        Stream.ofNullable(customer)
+                .map(String::toUpperCase)
+                .forEach(System.out::println);
+    }
+}
+
+Output
+No Output
+
+
+_______________________________________________________
+
+3. iterate() Enhancement
+
+Before Java 9
+import java.util.stream.Stream;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        Stream.iterate(1000, amount -> amount + 1000)
+                .limit(5)
+                .forEach(System.out::println);
+    }
+}
+
+Problem
+iterate() creates infinite stream, so limit() required.
+
+
+
+
+Java 9 Solution
+
+import java.util.stream.Stream;
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        Stream.iterate(
+                1000,
+                amount -> amount <= 5000,
+                amount -> amount + 1000
+        ).forEach(System.out::println);
+    }
+}
+Output
+1000
+2000
+3000
+4000
+5000
+
+
+___________________________________
+
+
+
+public class Bank {
+
+    public static void main(String[] args) throws Exception {
+
+        Process process =
+                Runtime.getRuntime().exec("notepad");
+
+        System.out.println(process);
+    }
+}
+
+
+
+
+__________________________
+
+
+
+
+public class Bank {
+
+    public static void main(String[] args) {
+
+        ProcessHandle process =
+                ProcessHandle.current();
+
+        System.out.println("PID : " + process.pid());
+    }
+}
+
+
+____________________________
+
+
+
+
+
+
