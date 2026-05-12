@@ -1,0 +1,242 @@
+JAVA 11 Features:
+=======================
+
+
+What Exactly is var in Java?
+
+var is not a datatype.
+
+It is:
+
+local variable type inference
+
+Meaning:
+
+Compiler automatically identifies the datatype based on assigned value.
+
+1. Simple var Code (Java 10+):
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        var name = "Vijay";
+
+        var age = 25;
+
+        var salary = 55000.50;
+
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(salary);
+    }
+}
+
+
+_______________________________________________
+
+2. Java 11 var in Lambda:
+
+interface Calculator {
+    int add(int a, int b);
+}
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Calculator c =
+                (var a, var b) -> a + b;
+
+        System.out.println(c.add(10, 20));
+    }
+}
+
+
+
+________________________________________________
+
+
+package com.demo.java11;
+
+public class Test {
+
+
+	    public static void main(String[] args) {
+
+	        // =========================================================
+	        // 1. isBlank()
+	        // Purpose:
+	        // Checks whether string contains only:
+	        // - empty value
+	        // - spaces
+	        // - tabs
+	        // - unicode whitespaces
+	        // =========================================================
+
+	        String s1 = "";
+	        String s2 = "   ";
+	        String s3 = "\u2003"; // Unicode EM SPACE
+
+	        System.out.println("isBlank with empty : " + s1.isBlank());
+
+	        System.out.println("isBlank with spaces : " + s2.isBlank());
+
+	        System.out.println("isBlank with unicode space : " + s3.isBlank());
+
+
+
+	        // =========================================================
+	        // 2. strip()
+	        // Purpose:
+	        // Removes leading and trailing spaces.
+	        // Better than trim() because it supports Unicode spaces.
+	        // =========================================================
+
+	        String s4 = "\u2003  Java  \u2003";
+
+	        System.out.println("Before strip : [" + s4 + "]");
+
+	        System.out.println("After strip : [" + s4.strip() + "]");
+
+
+
+	        // =========================================================
+	        // 3. stripLeading()
+	        // Purpose:
+	        // Removes only starting spaces.
+	        // =========================================================
+
+	        String s5 = "   Spring Boot";
+
+	        System.out.println("stripLeading : [" + s5.stripLeading() + "]");
+
+
+
+	        // =========================================================
+	        // 4. stripTrailing()
+	        // Purpose:
+	        // Removes only ending spaces.
+	        // =========================================================
+
+	        String s6 = "Microservices   ";
+
+	        System.out.println("stripTrailing : [" + s6.stripTrailing() + "]");
+
+
+
+	        // =========================================================
+	        // 5. repeat()
+	        // Purpose:
+	        // Repeats string multiple times.
+	        // =========================================================
+
+	        String s7 = "Java ";
+
+	        System.out.println("repeat : " + s7.repeat(3));
+
+
+
+	        // =========================================================
+	        // 6. lines()
+	        // Purpose:
+	        // Converts multiline string into stream of lines.
+	        // =========================================================
+
+	        String data = "Java\nSpring\nKafka";
+
+	        System.out.println("lines output:");
+
+	        data.lines().forEach(System.out::println);
+	    }
+	}
+
+
+
+
+
+___________________________________________________
+
+
+
+package com.demo.java11;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class Test {
+
+	public static void main(String[] args) throws Exception {
+
+		// =========================================================
+		// 1. Files.writeString()
+		// Purpose:
+		// Writes string data directly into file.
+		// Java 11 reduced boilerplate code.
+		// =========================================================
+
+		Path path = Path.of("sample.txt");
+
+		Files.writeString(path, "Welcome To Java 11 File Methods");
+
+		System.out.println("Data Written Successfully");
+
+		// =========================================================
+		// 2. Files.readString()
+		// Purpose:
+		// Reads complete file content directly as String.
+		// No BufferedReader needed.
+		// =========================================================
+
+		String content = Files.readString(path);
+
+		System.out.println("\nFile Content:");
+
+		System.out.println(content);
+	}
+}
+
+
+__________________________________________________
+
+
+
+import java.util.Optional;
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        String s1 = "Java";
+
+        String s2 = "";
+
+        String s3 = "   ";
+
+        String s4 = null;
+
+        Optional<String> op1 = Optional.ofNullable(s1);
+
+        Optional<String> op2 = Optional.ofNullable(s2);
+
+        Optional<String> op3 = Optional.ofNullable(s3);
+
+        Optional<String> op4 = Optional.ofNullable(s4);
+
+        System.out.println(op1.isEmpty());
+
+        System.out.println(op2.isEmpty());
+
+        System.out.println(op3.isEmpty());
+
+        System.out.println(op4.isEmpty());
+    }
+}
+
+
+____________________________________________________________________-
+
+
+
+
+
