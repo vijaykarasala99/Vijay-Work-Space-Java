@@ -1,0 +1,163 @@
+JAVA 17 CODES BY VIJAY:
+========================
+
+package com.vijay.java17;
+import java.util.random.RandomGenerator;
+import java.util.random.RandomGeneratorFactory;
+
+public class RandomGeneratorInJava17 {
+//Java 17 – Secure 4-Digit OTP using RandomGenerator (with L64X128MixRandom)
+
+	public static void main(String[] args) {
+		
+		RandomGenerator rng = RandomGeneratorFactory.of("L64X128MixRandom").create();
+
+		// Generate a 4-digit OTP (1000 to 9999)
+		int otp = rng.nextInt(1000, 10000);
+		System.out.println("Generated OTP: " + otp);
+
+	}
+
+}
+
+
+_________________________________________
+
+
+package com.demo.java17;
+
+sealed class Vehicle permits Car, Bike {
+
+    public void vehicleType() {
+        System.out.println("Vehicle");
+    }
+}
+
+final class Car extends Vehicle {
+
+    public void showCar() {
+        System.out.println("Car Class");
+    }
+}
+
+final class Bike extends Vehicle {
+
+    public void showBike() {
+        System.out.println("Bike Class");
+    }
+}
+
+public class SealedClassDemo {
+
+    public static void main(String[] args) {
+
+        Car car = new Car();
+        car.vehicleType();
+        car.showCar();
+
+        Bike bike = new Bike();
+        bike.vehicleType();
+        bike.showBike();
+    }
+}
+
+_______________________________________________________
+
+
+package com.demo.java17;
+
+record Employee(int employeeId, String employeeName) {
+
+}
+
+public class RecordDemo {
+
+    public static void main(String[] args) {
+
+        Employee employee =
+                new Employee(101, "Vijay");
+
+        System.out.println(employee.employeeId());
+
+        System.out.println(employee.employeeName());
+
+        System.out.println(employee);
+    }
+}
+
+
+_____________________________________________________
+
+
+package com.demo.java17;
+
+public class BeforeJava17 {
+
+    public static void main(String[] args) {
+
+        Object object = "Java";
+
+        if (object instanceof String) {
+
+            String value = (String) object;
+
+            System.out.println(value.toUpperCase());
+
+        } else if (object instanceof Integer) {
+
+            Integer number = (Integer) object;
+
+            System.out.println(number * 10);
+        }
+    }
+}
+
+
+
+___________________________________________________
+
+
+package com.demo.java17;
+
+public class PatternMatchingSwitchDemo {
+
+    public static void main(String[] args) {
+
+        Object object = "java17";
+
+        switch (object) {
+
+            case String value ->
+                    System.out.println(value.toUpperCase());
+
+            case Integer number ->
+                    System.out.println(number * 10);
+
+            default ->
+                    System.out.println("Invalid Data");
+        }
+    }
+}
+
+_____________________________________________________
+
+
+package com.demo.java17;
+
+public class TextBlockDemo {
+
+    public static void main(String[] args) {
+
+        String json = """
+                {
+                    "id": 101,
+                    "name": "Vijay"
+                }
+                """;
+
+        System.out.println(json);
+    }
+}
+
+
+_________________________________________________________
