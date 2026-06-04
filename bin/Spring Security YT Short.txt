@@ -1,0 +1,98 @@
+📌 Spring Security Module (✅ Very Important Module in Spring Framework)
+
+> > Hello Guys, In this video, we will discuss the Spring Security Module.
+
+> > Spring Security is an important module used to secure web applications and APIs.
+
+> > Securing applications is one of the most important responsibilities of every developer.
+
+> > Let me explain with a real-time example.
+
+_______________________________________________________________________________
+
+📌 FACEBOOK LOGIN EXAMPLE:
+
+> > Suppose I open the Facebook application. It's asking me to log in.
+
+> > Here, Facebook is verifying who I am.
+
+> > If I enter valid credentials, I will be allowed to log in.
+
+> > This process is called Authentication.
+
+✅ Authentication Means ===> Verifying Who You Are?
+
+> > I'll show another example.
+_______________________________________________________________________________
+
+📌 BOOKMYSHOW EXAMPLE:
+
+> > Suppose I access the BookMyShow application.
+
+> > As a Normal User, I can browse movies, select seats, and book tickets.
+
+> > But can I add movies? No.
+
+> > Can I update ticket prices? No.
+
+> > Can I add theaters? Absolutely No.
+
+> > Because I'm just a Normal User, but Admins can do that.
+
+> > User 1: ADMIN
+
+> > Add Movies, Update Ticket Prices, Add Theaters, View Revenue
+
+> > User 2: NORMAL USER
+
+> > Browse Movies, Select Seats, Book Tickets
+
+> > Here, we are deciding what a user is allowed to do after login.
+
+> > This process is called Authorization.
+
+✅ Authorization Means ===> What Are You Allowed To Do?
+_______________________________________________________________________________
+
+
+> > We can implement these types of security features in our applications using Spring Security.
+
+
+📌 What We Need To Learn In The Spring Security Module:
+
+✅  Security Fundamentals & Architecture
+
+✅ Authentication
+
+✅ Authorization
+
+✅ Security Filters & Filter Chain
+
+✅  JWT (JSON Web Token)
+
+✅  OAuth 2.0
+
+✅  User Roles & Permissions
+
+✅  Role-Based Access Control (RBAC)
+
+✅  Password Encoding (BCrypt)
+
+✅  Session Management
+
+✅  CSRF & CORS
+
+✅  Security Best Practices
+
+_______________________________________________________________________________
+
+> > I'm going to cover all the above topics with Live Coding & real-time examples in my regular classes.
+
+> > If anybody wants to LEARN --> Register for my Courses.
+
+> > Thanks for Watching!!!
+
+
+_______________________________________________________________________________
+
+
